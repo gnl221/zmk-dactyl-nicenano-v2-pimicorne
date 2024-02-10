@@ -158,12 +158,12 @@
 
         HOTKEYS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans                                          &trans  &trans
-                                &trans  &trans          &trans  &trans  &trans  &trans
-                                        &trans  &trans  &trans  &trans
+&trans   &trans     &trans      &trans         &trans         &trans                        &none          &none          &none             &kp LG(LA(O))  &trans      &kp RIGHT_BRACKET
+&kp TAB  &kp LSHFT  &kp LCTRL   &none          &kp LG(LA(F))  &kp LC(LS(F))                 &kp RA(F1)     &kp RG(N9)     &kp RA(F12)       &kp LG(LA(L))  &kp RS(N5)  &kp RS(NUMBER_2)
+&trans   &trans     &trans      &kp LG(LA(C))  &kp LG(LA(V))  &trans                        &kp LG(LA(N))  &kp LG(LA(M))  &kp RS(NUMBER_6)  &kp RS(N7)     &none       &none
+                    &kp LS(F9)  &kp LS(F10)                                                                               &trans            &trans
+                                               &trans         &trans                        &trans         &none          &none             &none
+                                                              &trans         &kp LG(SLASH)  &none          &trans
             >;
         };
     };
