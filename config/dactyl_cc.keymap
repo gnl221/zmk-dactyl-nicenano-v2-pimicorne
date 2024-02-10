@@ -125,12 +125,12 @@
 
         NUMBERS {
             bindings = <
-&bt BT_NXT  &none   &none   &none   &none   &none            &none   &none   &none   &none   &none   &none
-&bt BT_PRV  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&kp LBKT    &none   &none   &none   &none   &none            &none   &none   &none   &none   &none   &none
-                    &kp N1  &kp N2                                           &kp N3  &kp N4
-                                    &kp N1  &kp N2           &kp N3  &kp N4  &kp N5  &kp N6
-                                            &kp N7  &kp DEL  &kp N9  &kp N0
+&bt BT_NXT  &none      &none      &none     &none     &none         &kp GREATER_THAN  &kp N7        &kp N8        &kp N9        &kp COLON             &kp PERCENT
+&bt BT_PRV  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none         &kp LESS_THAN     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&none       &none      &none      &none     &none     &none         &kp EQUAL         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH             &kp ASTERISK
+                       &none      &none                                                             &kp MINUS     &kp PLUS
+                                            &none     &none         &trans            &trans        &trans        &kp N0
+                                                      &none  &none  &none             &kp COMMA
             >;
         };
 
