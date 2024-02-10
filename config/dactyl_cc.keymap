@@ -140,7 +140,7 @@
 &trans  &trans  &trans        &trans         &trans    &trans             &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans         &trans    &trans             &trans     &trans  &trans  &trans  &trans  &trans
                 &kp LG(LEFT)  &kp LG(RIGHT)                                                  &trans  &trans
-                                             &mkp MB1  &mkp RCLK          &mkp MCLK  &none   &trans  &none
+                                             &none  &none          &none  &none   &trans  &none
                                                        &trans     &trans  &none      &none
             >;
         };
