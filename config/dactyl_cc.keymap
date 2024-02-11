@@ -102,31 +102,31 @@
 
         NAVIGATION {
             bindings = <
-&kp PRINTSCREEN  &none       &none             &none              &none         &none            &kp LG(X)  &kp HOME   &kp UP       &kp END             &kp LG(Y)        &kp BACKSPACE
-&none            &kp LSHIFT  &kp LCTRL         &kp LALT           &kp LGUI      &kp BACKSPACE    &kp LG(C)  &kp LEFT   &kp DOWN     &kp RIGHT           &kp DELETE       &kp LG(A)
-&none            &none       &none             &none              &none         &none            &kp LG(V)  &kp LG(M)  &kp PAGE_UP  &kp PAGE_DOWN       &kp LG(A)        &kp INSERT
-                             &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &mo LOWER                                 &kp SPACE  &trans       &none
-                             &none             &kp KP_NUMLOCK     &kp CAPSLOCK  &kp ESC                     &none      &none        &kp LOCKING_SCROLL  &kp PAUSE_BREAK
+&kp PRINTSCREEN  &none       &none             &none              &none     &none            &kp LG(X)  &kp HOME         &kp UP          &kp END        &kp LG(Y)       &kp BACKSPACE
+&none            &kp LSHIFT  &kp LCTRL         &kp LALT           &kp LGUI  &kp BACKSPACE    &kp LG(C)  &kp LEFT         &kp DOWN        &kp RIGHT      &kp DELETE      &kp LG(A)
+&none            &none       &none             &none              &none     &none            &kp LG(V)  &kp LG(Z)        &kp PAGE_UP     &kp PAGE_DOWN  &kp LG(A)       &kp INSERT
+                             &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &trans                                &none            &none           &kp ESCAPE
+                             &none             &none              &none     &none                       &kp PAUSE_BREAK  &kp SCROLLLOCK  &kp CLCK       &kp KP_NUMLOCK
             >;
         };
 
         FUNCTION {
             bindings = <
-&bootloader  &none       &none      &none                 &none            &none         &kp PG_UP  &kp F7    &kp F8  &kp F9                &kp F10       &kp C_VOL_DN
-&none        &kp LSHIFT  &kp LCTRL  &kp LALT              &kp LGUI         &none         &kp PG_DN  &kp F4    &kp F5  &kp F6                &kp F11       &kp C_MUTE
-&none        &none       &none      &none                 &none            &none         &kp INS    &kp F1    &kp F2  &kp F3                &kp F12       &kp ASTRK
-                         &none      &none                 &kp COLON                                 &kp SEMI  &none   &trans
-                         &none      &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &kp K_MUTE               &none     &none   &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN
+&bootloader  &none       &none      &none     &none     &none    &bt BT_NXT  &kp F7             &kp F8                &kp F9           &kp F10               &kp C_VOL_DN
+&none        &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &none    &bt BT_PRV  &kp F4             &kp F5                &kp F6           &kp F11               &kp C_MUTE
+&none        &none       &none      &none     &none     &none    &kp INS     &kp F1             &kp F2                &kp F3           &kp F12               &kp ASTRK
+                         &none      &none     &none                          &kp SEMI           &none                 &kp K_MUTE
+                         &none      &none     &trans    &none                &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC
             >;
         };
 
         NUMBERS {
             bindings = <
-&bt BT_NXT  &none      &none      &none     &none      &none     &kp GREATER_THAN  &kp N7        &kp N8        &kp N9        &kp COLON             &kp PERCENT
-&bt BT_PRV  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI   &none     &kp LESS_THAN     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&none       &none      &none      &none     &none      &none     &kp EQUAL         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH             &kp ASTERISK
-                       &none      &none     &kp MINUS                              &kp PLUS      &none         &none
-                       &trans     &trans    &trans     &kp N0                      &none         &none         &none         &kp COMMA
+&bt BT_NXT  &none      &none      &none     &none     &none     &kp GREATER_THAN  &kp N7        &kp N8        &kp N9        &kp COLON             &kp PERCENT
+&bt BT_PRV  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none     &kp LESS_THAN     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&none       &none      &none      &none     &none     &none     &kp EQUAL         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH             &kp ASTERISK
+                       &none      &none     &none                                 &kp PLUS      &kp MINUS     &kp N0
+                       &none      &none     &none     &trans                      &kp DOT       &kp COMMA     &trans        &trans
             >;
         };
 
@@ -135,18 +135,18 @@
 &trans  &trans  &trans        &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans  &trans  &trans        &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                &kp LG(LEFT)  &kp LG(RIGHT)  &trans                    &trans  &none   &none
-                &none         &none          &trans  &none             &trans  &trans  &none   &none
+                &kp LG(LEFT)  &kp LG(RIGHT)  &none                     &trans  &none   &none
+                &none         &none          &none   &none             &none   &none   &trans  &none
             >;
         };
 
         SYMBOLS {
             bindings = <
-&kp CARET  &kp SQT         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp DOLLAR        &trans  &trans        &trans                &trans     &trans  &trans
-&kp HASH   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp UNDERSCORE    &trans  &kp EQUAL     &kp PLUS              &kp MINUS  &trans  &trans
-&kp PIPE   &kp LESS_THAN   &kp EXCLAMATION       &kp COLON              &kp GREATER_THAN   &kp AT_SIGN       &trans  &trans        &trans                &trans     &trans  &trans
-                           &kp AMPERSAND         &kp PERCENT            &trans                                       &trans        &kp NON_US_BACKSLASH  &trans
-                           &kp SEMICOLON         &none                  &none              &trans                    &kp ASTERISK  &kp SLASH             &none      &none
+&kp CARET  &kp SQT         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES     &kp DOLLAR        &none  &none      &trans    &trans     &trans  &trans
+&kp HASH   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE       &kp UNDERSCORE    &none  &kp EQUAL  &kp PLUS  &kp MINUS  &trans  &trans
+&kp PIPE   &kp LESS_THAN   &kp EXCLAMATION       &kp COLON              &kp GREATER_THAN      &kp AT_SIGN       &none  &trans     &trans    &trans     &none   &trans
+                           &kp AMPERSAND         &kp PERCENT            &kp NON_US_BACKSLASH                           &none      &none     &trans
+                           &kp ASTERISK          &kp SLASH              &trans                &kp SEMICOLON            &none      &none     &none      &none
             >;
         };
 
@@ -155,8 +155,8 @@
 &trans   &trans     &trans      &trans         &trans         &trans           &none          &none          &none             &kp LG(LA(O))  &trans      &kp RIGHT_BRACKET
 &kp TAB  &kp LSHFT  &kp LCTRL   &none          &kp LG(LA(F))  &kp LC(LS(F))    &kp RA(F1)     &kp RG(N9)     &kp RA(F12)       &kp LG(LA(L))  &kp RS(N5)  &kp RS(NUMBER_2)
 &trans   &trans     &trans      &kp LG(LA(C))  &kp LG(LA(V))  &trans           &kp LG(LA(N))  &kp LG(LA(M))  &kp RS(NUMBER_6)  &kp RS(N7)     &none       &none
-                    &kp LS(F9)  &kp LS(F10)    &trans                                         &trans         &trans            &trans
-                    &trans      &none          &none          &none                           &trans         &kp LG(SLASH)     &none          &trans
+                    &kp LS(F9)  &kp LS(F10)    &trans                                         &none          &none             &none
+                    &trans      &kp LG(SLASH)  &none          &none                           &trans         &none             &none          &none
             >;
         };
     };
