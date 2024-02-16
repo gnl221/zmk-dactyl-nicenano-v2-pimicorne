@@ -132,11 +132,11 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans            &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans  &trans  &trans            &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&none   &none   &none             &none              &none   &none   &trans  &trans  &trans  &trans  &trans  &trans
-                &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &none                           &trans  &none   &none
-                &none             &none              &trans  &none                   &none   &none   &none   &none
+&none  &none  &none             &none              &none   &none  &none  &none  &none  &none  &none  &bootloader
+&none  &none  &none             &none              &none   &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none             &none              &none   &none  &none  &none  &none  &none  &none  &none
+              &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &none                        &none  &none  &none
+              &none             &none              &trans  &none                &none  &none  &none  &none
             >;
         };
 
