@@ -14,9 +14,13 @@
 //#define OTHER_L 4
 
 #define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define SYMBOL  3
+#define NAVIGATION   1
+#define FUNCTION   2
+#define NUMBERS  3
+#define MOUSE  4
+#define SYMBOLS 5
+#define HOTKEYS  6
+
 
 // Desktop and tab navigation shortcuts		
 
