@@ -88,11 +88,11 @@
 
         default_layer {
             bindings = <
-&kp ESC           &kp Q               &kp W       &kp E            &kp R         &kp T        &kp Y  &kp U         &kp I       &kp O       &kp P                        &kp LEFT_BRACKET
-&kp LEFT_CONTROL  &mt LEFT_CONTROL A  &mt LGUI S  &mt LEFT_ALT D   &mt LSHIFT F  &kp G        &kp H  &mt RSHIFT F  &mt RALT A  &mt RGUI L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LSHIFT        &kp Z               &kp X       &kp C            &kp V         &kp B        &kp N  &kp M         &kp COMMA   &kp DOT     &kp FSLH                     &kp RSHIFT
-                                      &kp GRAVE   &kp EXCLAMATION  &kp MINUS                                       &kp EQUAL   &mo 1       &lt 2 SPACE
-                                      &mo 3       &kp TAB          &lt 5 SPACE   &lt 4 ENTER                       &kp LGUI    &kp LALT    &kp RALT                     &mo 6
+&kp ESC     &kp Q               &kp W       &kp E            &kp R         &kp T        &kp Y  &kp U         &kp I       &kp O       &kp P                        &kp LEFT_BRACKET
+&kp TAB     &mt LEFT_CONTROL A  &mt LGUI S  &mt LEFT_ALT D   &mt LSHIFT F  &kp G        &kp H  &mt RSHIFT F  &mt RALT A  &mt RGUI L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp LSHIFT  &kp Z               &kp X       &kp C            &kp V         &kp B        &kp N  &kp M         &kp COMMA   &kp DOT     &kp FSLH                     &kp RSHIFT
+                                &kp GRAVE   &kp EXCLAMATION  &kp MINUS                                       &kp EQUAL   &mo 1       &lt 2 SPACE
+                                &mo 3       &kp TAB          &lt 5 SPACE   &lt 4 ENTER                       &kp LGUI    &kp LALT    &kp RALT                     &mo 6
             >;
         };
 
@@ -153,6 +153,16 @@
 &trans  &none  &none       &kp LG(LA(C))  &kp LG(LA(V))  &none          &kp LG(LA(N))  &kp LG(LA(M))  &kp RS(NUMBER_6)  &kp RS(N7)     &none       &none
                &kp LS(F9)  &kp LS(F10)    &none                                                       &none             &none          &none
                &none       &none          &none          &none                                        &trans            &kp LG(SLASH)  &none       &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans                          &trans  &trans  &trans
+                &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans
             >;
         };
     };
