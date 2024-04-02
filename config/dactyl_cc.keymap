@@ -102,17 +102,17 @@
 &none            &kp LEFT_CONTROL  &kp LGUI          &kp LALT           &kp LSHIFT  &kp BACKSPACE  &kp LG(C)  &kp LEFT   &kp DOWN     &kp RIGHT      &kp DELETE      &kp LG(A)
 &none            &none             &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &none       &none          &kp LG(V)  &kp LG(Z)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(A)       &kp INSERT
                                    &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &none                                            &none        &trans         &none
-                                   &none             &kp KP_NUMLOCK     &kp CAPS    &kp AT_SIGN                          &none        &none          &kp SCROLLLOCK  &kp C_PAUSE
+                                   &bootloader       &kp KP_NUMLOCK     &kp CAPS    &kp AT_SIGN                          &none        &none          &kp SCROLLLOCK  &kp C_PAUSE
             >;
         };
 
         FUNCTION {
             bindings = <
-&bootloader  &none             &none     &none                 &none            &none       &bt BT_NXT  &kp F7  &kp F8    &kp F9  &kp F10               &bt BT_CLR
-&none        &kp LEFT_CONTROL  &kp LGUI  &kp LALT              &kp LSHFT        &none       &bt BT_PRV  &kp F4  &kp F5    &kp F6  &kp F11               &bt BT_CLR_ALL
-&none        &none             &none     &none                 &none            &none       &kp INS     &kp F1  &kp F2    &kp F3  &kp F12               &kp ASTRK
-                               &none     &none                 &none                                            &kp SEMI  &none   &trans
-                               &none     &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &kp K_MUTE                      &none     &none   &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN
+&none  &none             &none     &none                 &none            &none       &bt BT_NXT  &kp F7  &kp F8    &kp F9  &kp F10               &bt BT_CLR
+&none  &kp LEFT_CONTROL  &kp LGUI  &kp LALT              &kp LSHFT        &none       &bt BT_PRV  &kp F4  &kp F5    &kp F6  &kp F11               &bt BT_CLR_ALL
+&none  &none             &none     &none                 &none            &none       &kp INS     &kp F1  &kp F2    &kp F3  &kp F12               &kp ASTRK
+                         &none     &none                 &none                                            &kp SEMI  &none   &trans
+                         &none     &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &kp K_MUTE                      &none     &none   &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN
             >;
         };
 
@@ -128,21 +128,21 @@
 
         MOUSE {
             bindings = <
-&none  &none  &none             &none              &none   &none  &none  &none  &none  &none  &none  &bootloader
-&none  &none  &none             &none              &none   &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none             &none              &none   &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none             &none              &none  &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none             &none              &none  &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none             &none              &none  &none   &none  &none  &none  &none  &none  &none
               &kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &none                        &none  &none  &none
-              &none             &none              &trans  &none                &none  &none  &none  &none
+              &none             &bootloader        &none  &trans                &none  &none  &none  &none
             >;
         };
 
         SYMBOLS {
             bindings = <
-&kp CARET  &kp SQT         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp DOLLAR      &none  &none      &none         &none                 &none   &bootloader
-&kp HASH   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp UNDERSCORE  &none  &kp EQUAL  &kp PLUS      &kp MINUS             &none   &none
-&kp PIPE   &kp LESS_THAN   &kp EXCLAMATION       &kp COLON              &kp GREATER_THAN   &kp AT_SIGN     &none  &none      &none         &none                 &none   &trans
-                           &kp AMPERSAND         &kp PERCENT            &none                                                &none         &kp NON_US_BACKSLASH  &trans
-                           &kp SEMICOLON         &none                  &trans             &none                             &kp ASTERISK  &kp SLASH             &none   &none
+&kp CARET  &kp SQT         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp DOLLAR      &kp PIPE      &kp HASH       &kp CARET     &none                 &none   &bootloader
+&kp HASH   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp UNDERSCORE  &kp SLASH     &kp AMPERSAND  &kp PERCENT   &kp MINUS             &none   &none
+&kp PIPE   &kp LESS_THAN   &kp EXCLAMATION       &kp COLON              &kp GREATER_THAN   &kp AT_SIGN     &kp ASTERISK  &none          &none         &none                 &none   &trans
+                           &kp AMPERSAND         &kp PERCENT            &kp MINUS                                                       &kp PLUS      &kp NON_US_BACKSLASH  &trans
+                           &kp SEMICOLON         &none                  &trans             &none                                        &kp ASTERISK  &kp SLASH             &none   &none
             >;
         };
 
