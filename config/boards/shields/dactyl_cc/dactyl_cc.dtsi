@@ -42,4 +42,13 @@
             , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 4 from the schematic file   
             ;
     };
+    i2c1 {
+        compatible = "zephyr,i2c";
+        sda-pin = <X>;  // Define your SDA pin
+        scl-pin = <Y>;  // Define your SCL pin
+        pimoroni_trackball: trackball@0x0a {
+            compatible = "pimoroni,trackball";
+            reg = <0x0a>;
+        };
+    };
 };
